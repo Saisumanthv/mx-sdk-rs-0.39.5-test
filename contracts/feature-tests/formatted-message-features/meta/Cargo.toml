@@ -1,0 +1,15 @@
+[package]
+name = "formatted-message-features-meta"
+version = "0.0.0"
+edition = "2021"
+publish = false
+authors = ["xfactor@toml <xfactor.toml@gmail.com>", "Sumanth <saisumanthvadla@gmail.com>"]
+
+[dev-dependencies]
+
+[dependencies.formatted-message-features]
+path = ".."
+
+[dependencies.drt-sc-meta]
+version = "0.0.1-patch1"
+path = "../../../../framework/meta"

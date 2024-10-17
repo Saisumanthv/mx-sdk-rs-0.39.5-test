@@ -1,0 +1,21 @@
+[package]
+name = "proxy-test-second"
+version = "0.0.0"
+authors = ["xfactor@toml <xfactor.toml@gmail.com>", "Sumanth <saisumanthvadla@gmail.com>"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/proxy-test-second.rs"
+
+[features]
+ei-unmanaged = ["drt-sc/ei-unmanaged"]
+
+[dependencies.drt-sc]
+version = "0.0.1-patch1"
+path = "../../../../framework/base"
+features = ["alloc"]
+
+[dev-dependencies.drt-sc-scenario]
+version = "0.0.1-patch1"
+path = "../../../../framework/scenario"

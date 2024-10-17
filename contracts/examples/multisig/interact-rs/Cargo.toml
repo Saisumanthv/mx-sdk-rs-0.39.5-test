@@ -1,0 +1,21 @@
+[package]
+name = "multisig-interact"
+version = "0.0.0"
+authors = ["xfactor@toml <xfactor.toml@gmail.com>", "Sumanth <saisumanthvadla@gmail.com>"]
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "multisig-interact"
+path = "src/multisig_interact.rs"
+
+[dependencies.multisig]
+path = ".."
+
+[dependencies.drt-sc-modules]
+version = "0.0.1-patch1"
+path = "../../../../contracts/modules"
+
+[dependencies.drt-sc-snippets]
+version = "0.0.1-patch1"
+path = "../../../../framework/snippets"

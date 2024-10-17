@@ -1,0 +1,45 @@
+[package]
+name = "drt-chain-vm"
+version = "0.0.1-patch1"
+edition = "2021"
+
+authors = ["xfactor@toml <xfactor.toml@gmail.com>", "Sumanth <saisumanthvadla@gmail.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/DharitriOne/drt-sdk-rs"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "Dharitri VM implementation and tooling"
+keywords = ["dharitri", "blockchain", "vm", "tools"]
+categories = ["cryptography::cryptocurrencies", "development-tools::debugging"]
+
+[dependencies]
+num-bigint = "0.4"
+num-traits = "0.2"
+hex = "0.4"
+sha2 = "0.10.6"
+sha3 = "0.10.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8.5"
+rand_seeder = "0.2.2"
+ed25519-dalek = "1.0.1"
+itertools = "0.10.3"
+bech32 = "0.9"
+
+[dependencies.drt-sc]
+version = "=0.0.1-patch1"
+path = "../framework/base"
+features = ["alloc", "num-bigint", "promises", "big-float"]
+
+[dependencies.drt-sc-meta]
+version = "=0.0.1-patch1"
+path = "../framework/meta"
+
+[dependencies.drt-chain-scenario-format]
+version = "0.0.1-patch1"
+path = "../sdk/scenario-format"
+
+[dev-dependencies.drt-sc-meta] # only used in the sample_adder test
+version = "=0.0.1-patch1"
+path = "../framework/meta"

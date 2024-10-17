@@ -1,0 +1,12 @@
+[package]
+name = "local-dcdt-and-nft-meta"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.local-dcdt-and-nft]
+path = ".."
+
+[dependencies.drt-sc-meta]
+version = "0.0.1-patch1"
+path = "../../../../../framework/meta"

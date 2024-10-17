@@ -1,0 +1,19 @@
+[package]
+name = "drt-wrewa-swap-sc-meta"
+version = "0.0.0"
+authors = ["xfactor@toml <xfactor.toml@gmail.com>", "Sumanth <saisumanthvadla@gmail.com>"]
+edition = "2021"
+publish = false
+
+[dev-dependencies]
+
+[dependencies.drt-wrewa-swap-sc]
+path = ".."
+
+[dependencies.drt-sc]
+version = "0.0.1-patch1"
+path = "../../../../framework/base"
+
+[dependencies.drt-sc-meta]
+version = "0.0.1-patch1"
+path = "../../../../framework/meta"
